@@ -15,6 +15,9 @@
 		2C0C331722028908006F0267 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C331622028908006F0267 /* main.m */; };
 		2C0C332122028908006F0267 /* iJSKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C332022028908006F0267 /* iJSKitTests.m */; };
 		2C0C332C22028908006F0267 /* iJSKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C332B22028908006F0267 /* iJSKitUITests.m */; };
+		2C0C333B22028C38006F0267 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C0C333A22028C38006F0267 /* WebKit.framework */; };
+		2C67FC112203D4CD00C2B5C2 /* IJSKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2C67FC102203D4CD00C2B5C2 /* IJSKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2C67FC272203E05700C2B5C2 /* webpage in Resources */ = {isa = PBXBuildFile; fileRef = 2C67FC262203E05700C2B5C2 /* webpage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2C67FC092203D38300C2B5C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2C67FC112203D4CD00C2B5C2 /* IJSKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		2C0C330422028906006F0267 /* iJSKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iJSKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0C330722028906006F0267 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +67,9 @@
 		2C0C332722028908006F0267 /* iJSKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iJSKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0C332B22028908006F0267 /* iJSKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iJSKitUITests.m; sourceTree = "<group>"; };
 		2C0C332D22028908006F0267 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C0C333A22028C38006F0267 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2C67FC102203D4CD00C2B5C2 /* IJSKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJSKit.framework; sourceTree = "<group>"; };
+		2C67FC262203E05700C2B5C2 /* webpage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webpage; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C0C333B22028C38006F0267 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +105,7 @@
 				2C0C331F22028908006F0267 /* iJSKitTests */,
 				2C0C332A22028908006F0267 /* iJSKitUITests */,
 				2C0C330522028906006F0267 /* Products */,
+				2C0C333922028C38006F0267 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +122,7 @@
 		2C0C330622028906006F0267 /* iJSKit */ = {
 			isa = PBXGroup;
 			children = (
+				2C67FC262203E05700C2B5C2 /* webpage */,
 				2C0C330722028906006F0267 /* AppDelegate.h */,
 				2C0C330822028906006F0267 /* AppDelegate.m */,
 				2C0C330A22028906006F0267 /* ViewController.h */,
@@ -132,6 +154,15 @@
 			path = iJSKitUITests;
 			sourceTree = "<group>";
 		};
+		2C0C333922028C38006F0267 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C67FC102203D4CD00C2B5C2 /* IJSKit.framework */,
+				2C0C333A22028C38006F0267 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +173,7 @@
 				2C0C330022028906006F0267 /* Sources */,
 				2C0C330122028906006F0267 /* Frameworks */,
 				2C0C330222028906006F0267 /* Resources */,
+				2C67FC092203D38300C2B5C2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -237,6 +269,7 @@
 			files = (
 				2C0C331422028908006F0267 /* LaunchScreen.storyboard in Resources */,
 				2C0C331122028908006F0267 /* Assets.xcassets in Resources */,
+				2C67FC272203E05700C2B5C2 /* webpage in Resources */,
 				2C0C330F22028906006F0267 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,14 +469,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X9ZGK3UJ5M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iJSKit",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iJSKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.iJSKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -452,14 +494,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X9ZGK3UJ5M;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iJSKit",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = iJSKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YXJ.iJSKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};

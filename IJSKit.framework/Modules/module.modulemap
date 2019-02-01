@@ -1,0 +1,6 @@
+framework module IJSKit {
+  umbrella header "IJSKit.h"
+
+  export *
+  module * { export * }
+}
